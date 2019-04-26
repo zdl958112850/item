@@ -1,0 +1,44 @@
+.top-nav {
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: '宋体';
+  color: #fff;
+  background-color: #296795;
+}
+.top-nav .right {
+  font-size: 14px;
+  position: relative;
+}
+.top-nav .right .f {
+  margin-right: 50px;
+}
+.top-nav .right .l {
+  position: absolute;
+  top: 6px;
+  left: -30px;
+}
+.top-nav .right .r {
+  position: absolute;
+  top: 6px;
+  right: 165px;
+}
+.nav .left {
+  margin-right: 80px;
+}
+.nav ul li {
+  float: left;
+  padding: 25px 0;
+}
+.nav ul li a {
+  display: inline-block;
+  padding: 0 30px;
+  padding-bottom: 10px;
+  color: #000;
+}
+.nav ul li a:hover {
+  border-bottom: 2px solid skyblue;
+  border-radius: 5px;
+  color: skyblue;
+  box-sizing: border-box;
+}
