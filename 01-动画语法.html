@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background: hotpink;
+      /* 调用动画 */
+      /* 动画名称 */
+      /* animation-name: dh; */
+      /* 动画时长 */
+      /* animation-duration: 1s; */
+      /* 速度类型 */
+      /* animation-timing-function: linear; */
+      /* 延迟 */
+      /* animation-delay: 3s; */
+      /* 动画次数 */
+      /* animation-iteration-count: 1; */
+      /* animation-iteration-count: infinite; */
+      /* 逆向播放 */
+      /* animation-direction: alternate; */
+      /* animation-fill-mode:backwards; */
+      /* animation-fill-mode:forwards; */
+
+      /* animation: dh 1s infinite 3s linear; */
+
+      /* 扩展：steps(数字) 表示动画要分多少步完成 */
+      animation: dh 5s  steps(100) ;
+
+    }
+
+    div:hover {
+      /* 鼠标进入div，暂停动画 */
+      /* animation-play-state: paused; */
+    }
+
+    /* 定义动画 */
+    @keyframes dh {
+      from {
+        /* 开始状态 */
+        width: 200px;
+      }
+      to {
+        /* 结束状态 */
+        width: 1000px;
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
