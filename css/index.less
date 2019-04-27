@@ -30,10 +30,12 @@
                     border: 1px solid #a5257c;
                     height: 36px;
                 }
+
                 input:nth-child(1) {
 
                     padding-left: 5px;
                 }
+
                 input:nth-child(2) {
 
                     width: 50px;
@@ -91,18 +93,20 @@
             }
 
         }
-        
+
         li:nth-child(2) {
-            
+
             position: relative;
+
             ul {
 
                 position: absolute;
                 z-index: 1;
                 display: none;
-                background-color:#fff;
+                background-color: #fff;
+
                 a {
-    
+
                     color: #999;
                 }
 
@@ -112,6 +116,7 @@
                 }
             }
         }
+
         li:nth-child(2):hover ul {
             display: block;
         }
@@ -121,6 +126,10 @@
     ul>li:hover {
         background-color: rgba(255, 255, 255, 0.2);
         border-bottom: 2px solid #fff;
+    }
+
+    li:nth-child(2) {
+        border-bottom: 0;
     }
 }
 
@@ -148,12 +157,13 @@
                 }
 
             }
-            
+
         }
 
         span {
             position: absolute;
-            top: 0;;
+            top: 0;
+            ;
             bottom: 0;
             // left: 0;
             margin: auto;
@@ -181,26 +191,196 @@
             height: 5px;
 
             i {
-                position: absolute;        
+                position: absolute;
                 display: inline-block;
                 margin-left: 20px;
                 width: 50px;
                 height: 5px;
-                border-radius: 5px; 
+                border-radius: 5px;
                 background: #ccc;
             }
+
             i:nth-child(2) {
                 left: 60px;
             }
+
             i.yans {
                 background: #a5257c;
             }
         }
 
     }
-    
+
     .visible-window:hover span {
         display: block;
     }
 }
+
 // 轮播部分E
+// 介绍部分S
+.content {
+
+    padding-bottom: 50px;
+
+    .top {
+
+        margin-top: 40px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                text-align: center;
+                line-height: 63px;
+                font-size: 18px;
+                width: 310px;
+                height: 63px;
+                cursor: pointer;
+                color: #999;
+                background-color: #f0f0f0;
+            }
+
+            li:hover {
+                color: #fff;
+                background-color: #a5257c;
+            }
+        }
+
+    }
+
+    .buttom {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                margin-top: 30px;
+                width: 405px;
+                height: 470px;
+                box-sizing: border-box;
+                overflow: hidden;
+
+
+                div:nth-child(1) {
+                    width: 405px;
+                    height: 226px;
+                    overflow: hidden;
+                    transition: all 0.2s linear;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                div:nth-child(2) {
+                    padding: 0 40px;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #ccc;
+                    transition: all 0.2s linear;
+
+                    h5 {
+                        height: 85px;
+                        line-height: 85px;
+                        font-size: 16px;
+
+                    }
+
+                    p {
+                        height: 95px;
+                        font-size: 13px;
+                        color: #999;
+                    }
+                }
+
+                div:nth-child(3) {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    a {
+                        margin-top: 13px;
+                        margin-right: 20px;
+                        display: block;
+                        text-align: center;
+                        line-height: 36px;
+                        width: 88px;
+                        height: 36px;
+                        color: #999;
+                        border: 1px solid #eee;
+                        font-size: 18px;
+                        transition: all 0.5s linear;
+                    }
+
+                    i {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            li:hover {
+                background-color: #a5257c;
+
+                img {
+                    width: 125%;
+                    // animation: zoom 1s linear;
+                }
+
+                h5,
+                p {
+                    color: #fff;
+                }
+
+                a {
+                    width: 110px;
+                    border-radius: 40px;
+                    background-color: #fff;
+
+                }
+
+                div:nth-child(2) {
+                    width: 430px;
+                    margin-left: 5px;
+                    // animation: deviation 1s;
+                }
+
+                div:nth-child(1) {
+                    width: 430px;
+                }
+            }
+        }
+
+        ul:after {
+            content: '';
+            display: block;
+            width: 405px;
+            height: 470px;
+        }
+    }
+
+    .buttom.hide {
+        display: none;
+    }
+}
+
+@keyframes zoom {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 105%;
+    }
+}
+
+@keyframes deviation {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 5px;
+    }
+}
+
+// 介绍部分E

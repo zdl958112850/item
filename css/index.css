@@ -80,6 +80,9 @@
   background-color: rgba(255, 255, 255, 0.2);
   border-bottom: 2px solid #fff;
 }
+.nav li:nth-child(2) {
+  border-bottom: 0;
+}
 .Rotation-chart .visible-window {
   position: relative;
   width: 100%;
@@ -136,4 +139,132 @@
 }
 .Rotation-chart .visible-window:hover span {
   display: block;
+}
+.content {
+  padding-bottom: 50px;
+}
+.content .top {
+  margin-top: 40px;
+}
+.content .top ul {
+  display: flex;
+  justify-content: space-between;
+}
+.content .top ul li {
+  text-align: center;
+  line-height: 63px;
+  font-size: 18px;
+  width: 310px;
+  height: 63px;
+  cursor: pointer;
+  color: #999;
+  background-color: #f0f0f0;
+}
+.content .top ul li:hover {
+  color: #fff;
+  background-color: #a5257c;
+}
+.content .buttom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content .buttom ul li {
+  margin-top: 30px;
+  width: 405px;
+  height: 470px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.content .buttom ul li div:nth-child(1) {
+  width: 405px;
+  height: 226px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+.content .buttom ul li div:nth-child(1) img {
+  width: 100%;
+}
+.content .buttom ul li div:nth-child(2) {
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  transition: all 0.2s linear;
+}
+.content .buttom ul li div:nth-child(2) h5 {
+  height: 85px;
+  line-height: 85px;
+  font-size: 16px;
+}
+.content .buttom ul li div:nth-child(2) p {
+  height: 95px;
+  font-size: 13px;
+  color: #999;
+}
+.content .buttom ul li div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+.content .buttom ul li div:nth-child(3) a {
+  margin-top: 13px;
+  margin-right: 20px;
+  display: block;
+  text-align: center;
+  line-height: 36px;
+  width: 88px;
+  height: 36px;
+  color: #999;
+  border: 1px solid #eee;
+  font-size: 18px;
+  transition: all 0.5s linear;
+}
+.content .buttom ul li div:nth-child(3) i {
+  font-size: 12px;
+}
+.content .buttom ul li:hover {
+  background-color: #a5257c;
+}
+.content .buttom ul li:hover img {
+  width: 125%;
+}
+.content .buttom ul li:hover h5,
+.content .buttom ul li:hover p {
+  color: #fff;
+}
+.content .buttom ul li:hover a {
+  width: 110px;
+  border-radius: 40px;
+  background-color: #fff;
+}
+.content .buttom ul li:hover div:nth-child(2) {
+  width: 430px;
+  margin-left: 5px;
+}
+.content .buttom ul li:hover div:nth-child(1) {
+  width: 430px;
+}
+.content .buttom ul:after {
+  content: '';
+  display: block;
+  width: 405px;
+  height: 470px;
+}
+.content .buttom.hide {
+  display: none;
+}
+@keyframes zoom {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 105%;
+  }
+}
+@keyframes deviation {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 5px;
+  }
 }
